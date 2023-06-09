@@ -12,6 +12,10 @@ body{
 .container{
     @apply max-w-[140rem] mx-auto p-[1.5rem];
 }
+.text__stroke{
+    -webkit-text-stroke: 4px #ffffff;
+    text-stroke: 4px #ffffff;
+}
 
 @layer components{
     /* MOBILE */
@@ -19,19 +23,19 @@ body{
         @apply flex items-center justify-between;
     }
     .header .branding{
-        @apply p-[1.5rem] lg:hidden;
+        @apply p-[1.2rem] lg:hidden;
     }
     .branding img{
         @apply mx-auto;
     }
     .header__wrapper{
-        @apply flex items-center px-[1.5rem] bg-primary justify-between lg:hidden;
+        @apply flex items-center px-[1rem] py-[.5rem] bg-primary justify-between lg:hidden;
     }
     .header__menu h3{
         @apply text-light font-bold;
     }
     .header__nav{
-        @apply top-[100rem] max-h-0 overflow-hidden transition-all duration-500;
+        @apply top-[100rem] max-h-0 overflow-hidden transition-all duration-500 lg:hidden   ;
     }
     .header__nav.open{
         @apply top-0 max-h-[200rem] transition-all duration-500;
@@ -101,11 +105,11 @@ body{
     }
 
     /* DESKTOP */
-    .header__details{
-        @apply bg-primary py-[1rem];
+     .header__details{
+        @apply hidden lg:flex lg:bg-primary lg:py-[1rem];
     }
     .header__wrapper__desktop{
-        @apply  flex items-center justify-between max-w-[70rem] mx-auto;
+        @apply  flex items-center justify-between mx-auto gap-[15rem];
     }
     .header__text{
         @apply flex text-light gap-[1rem];
@@ -124,5 +128,95 @@ body{
     }
     .header__btn a i{
         @apply mr-[1rem];
+    } 
+    .header__desktop{
+        @apply  hidden z-[999] fixed bg-blue-500 p-[2rem] max-w-[73rem] left-[20%] top-[7rem] rounded-[.5rem] lg:flex;
     }
+
+    .header__wrapper2{
+        @apply grid grid-cols-[2fr_2fr_1fr] gap-x-[1rem] items-center;
+    }
+
+    .header__nav__desktop{
+        @apply relative text-light;
+    }
+
+    .header__nav__desktop ul{
+        @apply flex gap-x-[1.5rem];
+    }
+    .header__nav__desktop ul li a{
+        @apply flex items-center justify-between;
+    }
+    .header__nav__desktop ul li a i{
+        @apply ml-[.5rem];
+    }
+    .header__nav__desktop ul li ul{
+        @apply bg-primary flex flex-col gap-x-[1rem] absolute top-[3rem] opacity-0;
+    }
+
+    .header__nav__desktop ul li:hover ul{
+        @apply max-h-fit p-[1rem] w-[15rem] opacity-100;
+    }
+
+    .header__nav__desktop ul li ul li:not(:first-child){
+        @apply mt-[1rem];
+    }
+
+    .header__nav__desktop ul li ul li ul{
+        @apply absolute top-[0] right-[-15rem] opacity-0;
+    }
+
+    .header__nav__desktop ul li ul li:hover ul{
+        @apply max-h-fit p-[1rem] w-[15rem] opacity-100;
+    }
+    .desktop__btn a{
+        @apply w-fit px-[1.5rem] py-[.8rem] text-light bg-primary rounded-md hover:bg-dark;
+    }
+
+}
+/* BANNER */
+@layer components{
+    .banner{
+        @apply bg-slider1 bg-cover bg-no-repeat h-[74vh] lg:h-[100vh];
+    }
+    .banner__wrapper{
+        @apply pt-[11rem] lg:max-w-[90rem] lg:mx-auto;
+    }
+    /* .banner__img{
+        @apply hidden lg:flex lg:flex-end;
+    } */
+    .banner__content{
+        @apply lg:flex lg:flex-row-reverse lg:gap-[5rem];
+    }
+    .banner__bg__text{
+        @apply absolute top-[32%];
+    }
+    .banner__bg__text h4{
+        @apply text-transparent font-bold text-[5rem] opacity-10;
+    }
+    .banner__text{
+        @apply z-50 flex flex-col items-center justify-center;
+    }
+    .banner__text h2{
+        @apply text-center flex flex-wrap font-semibold text-light text-[1.5rem] max-w-[20rem] leading-[3rem] mb-[1rem] lg:text-left lg:text-[4rem] lg:max-w-[150rem] lg:leading-[6rem];
+    }
+    .banner__text h3{
+        @apply text-center flex flex-wrap font-semibold text-[1.2rem] text-light max-w-[25rem] leading-[2rem] lg:text-left;
+    }
+    .banner__btn{
+        @apply flex gap-[1rem] justify-center mt-[3rem];
+    }
+    .banner__btn a{
+        @apply w-fit px-[1.5rem] py-[.8rem] text-light bg-primary rounded-md;
+    }
+    .banner__btn a:hover{
+        @apply bg-dark;
+    }
+    .banner__btn a:last-child{
+        @apply bg-transparent border-[1px] border-primary text-primary;
+    }
+    .banner__btn a:last-child:hover{
+        @apply bg-primary text-light;
+    }
+
 }

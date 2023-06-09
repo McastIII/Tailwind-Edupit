@@ -15,9 +15,11 @@ module.exports = {
     },
 
     backgroundImage: {
-      'slider': 'url("./img/slider-bg2.jpg")',
-    },},
+      'slider1': 'url("./img/slider-bg2.jpg")',
+    },
   },
-  plugins: [],
+  },
+  plugins: [require('tailwindcss'),
+  require('autoprefixer'),],
 }
 
