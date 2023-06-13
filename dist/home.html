@@ -246,13 +246,13 @@
 <div class="header__desktop">
     <div class="header__wrapper2">
         <div class="desktop__logo">
-            <img src="./img/logo white.png" alt="">
+            <img src="./img/logoWhite.png" alt="">
         </div>
         <div class="header__nav__desktop">
-            <ul>
+            <ul class="first-drop">
                 <li>
                     <a href="javascript:void(0)">Home<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">Home One</a></li>
                         <li><a href="javascript:void(0)">Home Two</a></li>
                         <li><a href="javascript:void(0)">Landing Page</a></li>
@@ -260,7 +260,7 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)">About<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">About</a></li>
                         <li><a href="javascript:void(0)">About Style 02</a></li>
                         <li><a href="javascript:void(0)">About Style 03</a></li>
@@ -268,7 +268,7 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)">Courses<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">Courses</a></li>
                         <li><a href="javascript:void(0)">Instructor Registration</a></li>
                         <li><a href="javascript:void(0)">Student Registration</a></li>
@@ -277,11 +277,11 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)">Academics<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">Academics</a></li>
                         <li>
                             <a href="javascript:void(0)">Admission<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul>
+                            <ul class="third-drop">
                                 <li><a href="javascript:void(0)">Admission</a></li>
                                 <li><a href="javascript:void(0)">Tuition & Fees</a></li>
                                 <li><a href="javascript:void(0)">How To Apply</a></li>
@@ -290,7 +290,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0)">Elements<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul>
+                            <ul class="third-drop">
                                 <li><a href="javascript:void(0)">Portfolio</a></li>
                                 <li><a href="javascript:void(0)">Feature</a></li>
                                 <li><a href="javascript:void(0)">Our Clients</a></li>
@@ -305,7 +305,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0)">Service Style<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul>
+                            <ul class="third-drop">
                                 <li><a href="javascript:void(0)">Service Style</a></li>
                                 <li><a href="javascript:void(0)">Service Style 02</a></li>
                                 <li><a href="javascript:void(0)">Service Style 03</a></li>
@@ -314,7 +314,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0)">Team<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul>
+                            <ul class="third-drop">
                                 <li><a href="javascript:void(0)">Team</a></li>
                                 <li><a href="javascript:void(0)">Team Details</a></li>
                             </ul>
@@ -325,7 +325,7 @@
                         <li><a href="javascript:void(0)">Counter</a></li>
                         <li>
                             <a href="javascript:void(0)">Case Study<i class="fa-solid fa-chevron-right"></i></a>
-                            <ul>
+                            <ul class="third-drop">
                                 <li><a href="javascript:void(0)">Team</a></li>
                                 <li><a href="javascript:void(0)">Team Details</a></li>
                             </ul>
@@ -335,7 +335,7 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)">Blog<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">Blog</a></li>
                         <li><a href="javascript:void(0)">Blog Left Slidebar</a></li>
                         <li><a href="javascript:void(0)">Blog Right Slidebar</a></li>
@@ -345,7 +345,7 @@
                 </li>
                 <li>
                     <a href="javascript:void(0)">Contact<i class="fa-solid fa-chevron-down"></i></a>
-                    <ul>
+                    <ul class="second-drop">
                         <li><a href="javascript:void(0)">Contact</a></li>
                         <li><a href="javascript:void(0)">Contact Style 02</a></li>
                         <li><a href="javascript:void(0)">Contact Style 03</a></li>
@@ -354,21 +354,21 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-        <div class="desktop__btn">
-            <a href="">Get a Quote</a>
+            <div class="desktop__btn">
+                <a href="">Get a Quote</a>
+            </div>
         </div>
     </div>
 </div>
-</header>
+    </header>
 
     <section class="banner">
             <div class="banner__wrapper">
-                <div class="banner__bg__text">
-                    <h4 class="text__stroke">EDUPIT</h4>
-                </div>
                 <div class="banner__list">
                     <div class="banner__item">
+                        <div class="banner__bg__text">
+                            <h4 class="text__stroke">EDUPIT</h4>
+                        </div>
                         <div class="banner__content">
                             <div class="banner__img">
                                 <img src="./img/right-img.png" alt="">
@@ -384,12 +384,17 @@
                         </div>
                     </div>
                     <div class="banner__item">
-                        <div class="banner__img">
-                            <img src="./img/abbut-img.png" alt="">
+                        <div class="banner__bg__text">
+                            <h4 class="text__stroke">EDUPIT</h4>
                         </div>
-                        <div class="banner__text">
-                            <h2>Education Is the Backbone of the Nation.</h2>
-                            <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
+                        <div class="banner__content">
+                            <div class="banner__img">
+                                <img src="./img/abbut-img.png" alt="">
+                            </div>
+                            <div class="banner__text">
+                                <h2>Education Is the Backbone of the Nation.</h2>
+                                <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
+                            </div>
                         </div>
                         <div class="banner__btn">
                             <a href="">START TRIAL</a>
@@ -401,60 +406,51 @@
             </div>
     </section>
 
-    <section class="feature">
+    <section class="features">
         <div class="container">
-            <div class="feature__wrapper">
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img1.png" alt="">
-                        <div class="feature__text">
+            <div class="features__wrapper">
+                <div class="features__card">
+                    <div class="features__content">
+                        <img src="./img/fi2.png" alt="">
+                        <div class="features__text">
                             <a href="">Non-Resident</a>
                             <p>Student(100)</p>
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img2.png" alt="">
-                        <div class="feature__text">
-                            <a href="">Non-Resident</a>
-                            <p>Student(100)</p>
+                <div class="features__card">
+                    <div class="features__content">
+                        <img src="./img/fi3.png" alt="">
+                        <div class="features__text">
+                            <a href="">Tuition is Free</a>
+                            <p>Student(15)</p>
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img3.png" alt="">
-                        <div class="feature__text">
-                            <a href="">Non-Resident</a>
-                            <p>Student (100)</p>
+                <div class="features__card">
+                    <div class="features__content">
+                        <img src="./img/fi4.png" alt="">
+                        <div class="features__text">
+                            <a href="">Graduate Teacher</a>
+                            <p>Student (40)</p>
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img4.png" alt="">
-                        <div class="feature__text">
-                            <a href="">Non-Resident</a>
-                            <p>Student(100)</p>
+                <div class="features__card">
+                    <div class="features__content">
+                        <img src="./img/fi1.png" alt="">
+                        <div class="features__text">
+                            <a href="">Residential</a>
+                            <p>Student(500)</p>
                         </div>
                     </div>
                 </div>
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img5.png" alt="">
-                        <div class="feature__text">
-                            <a href="">Non-Resident</a>
-                            <p>Student(100)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature__card">
-                    <div class="feature__content">
-                        <img src="./edupit-img/feature-img4.png" alt="">
-                        <div class="feature__text">
-                            <a href="">Non-Resident</a>
-                            <p>Student(100)</p>
+                <div class="features__card">
+                    <div class="features__content">
+                        <img src="./img/fi4.png" alt="">
+                        <div class="features__text">
+                            <a href="">Graduate Teacher</a>
+                            <p>Student(40)</p>
                         </div>
                     </div>
                 </div>
@@ -484,7 +480,9 @@
                             <img src="./img/cl1.jpg" alt="">
                             <img src="./img/cl2.jpg" alt="">
                             <img src="./img/cl3.jpg" alt="">
+                            <img src="./img/cl2.jpg" alt="">
                             <img src="./img/cl4.jpg" alt="">
+                            <img src="./img/cl2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -690,18 +688,164 @@
         </div>
     </section>
 
+    <section class="instructor">
+        <div class="container">
+            <div class="instructor__wrapper">
+                <div class="instructor__title">
+                    <h6>Instructors</h6>
+                    <h3>What do you want to learn today?</h3>
+                    <div class="instructor__list">
+                        <div class="instructor__item">
+                            <img src="./img/team-02.jpg" alt="">
+                            <div class="instructor__text">
+                                <h5>Chris Anderson</h5>
+                                <p>PARTNER</p>
+                                <div class="instructor__social">
+                                    <ul>
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor__item">
+                            <img src="./img/team-01.jpg" alt="">
+                            <div class="instructor__text">
+                                <h5>Ethan J. Cooper</h5>
+                                <p>MANAGING PARTNER</p>
+                                <div class="instructor__social">
+                                    <ul>
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor__item">
+                            <img src="./img/team-02.jpg" alt="">
+                            <div class="instructor__text">
+                                <h5>Russel Smith</h5>
+                                <p>PRODUCT OFFICER</p>
+                                <div class="instructor__social">
+                                    <ul>
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor__item">
+                            <img src="./img/team-01.jpg" alt="">
+                            <div class="instructor__text">
+                                <h5>Ethan Cooper</h5>
+                                <p>MANAGING PARTNER</p>
+                                <div class="instructor__social">
+                                    <ul>
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facility">
+        <div class="container">
+            <div class="facility__wrapper">
+                <div class="facility__title">
+                    <h6>OUR SCHOOL FACILITY</h6>
+                    <h3>All the benefits you get in our education program !</h3>
+                </div>
+                <div class="facility__list">
+                    <div class="facility__item">
+                        <img src="./img/pr1.jpg" alt="">
+                        <h5>Computer Science</h5>
+                        <p>01 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr2.jpg" alt="">
+                        <h5>Development</h5>
+                        <p>42 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                    <img src="./img/pr3.jpg" alt="">
+                        <h5>Chemistry</h5>
+                        <p>15 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr4.jpg" alt="">
+                        <h5>Architecture</h5>
+                        <p>05 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr5.jpg" alt="">
+                        <h5>Physics</h5>
+                        <p>07 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr6.jpg" alt="">
+                        <h5>Islamic History</h5>
+                        <p>15 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr7.jpg" alt="">
+                        <h5>Political Science</h5>
+                        <p>12 Courses</p>
+                    </div>
+                    <div class="facility__item">
+                        <img src="./img/pr8.jpg" alt="">
+                        <h5>Philosophy</h5>
+                        <p>01 Courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
+            var slider = tns({
+            container: '.banner__list',
+            items: 1,
+            slideBy: 'page',
+            autoplay: false,
+            axis: 'horizontal',
+            controls: false,
+            nav: false,
+            navPosition: 'bottom',
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            responsive: {
+            }
+        });
         var slider = tns({
-        container: '.feature__wrapper',
+        container: '.features__wrapper',
         items: 1,
         slideBy: 'page',
         autoplay: true,
         controls: false,
         nav: true,
         autoplayButtonOutput: false,
+        mouseDrag:true,
+        responsive: {
+                1024: {
+                    items: 4,
+                    nav: true,
+                    autoplay: true,
+                    controls: false,
+                    slideBy: 1
+                }
+            }
         });
         
         var slider = tns({
@@ -718,28 +862,36 @@
             gutter: 20,
             responsive: {
                 1024: {
-                    items: 6,
-                    nav: false,
+                    items: 5,
+                    nav: true,
                     autoplay: true,
-                    controls: true,
-                    slideBy: 'page'
+                    controls: false,
+                    slideBy: 1
                 }
             }
         });
         var slider = tns({
-            container: '.banner__list',
+            container: '.instructor__list',
             items: 1,
             slideBy: 'page',
             autoplay: true,
             axis: 'horizontal',
             controls: false,
-            nav: true,
+            nav: false,
             navPosition: 'bottom',
             autoplayButtonOutput: false,
-            mouseDrag: true,
+            mouseDrag: true, 
             responsive: {
+                1024: {
+                    items: 3,
+                    nav: true,
+                    autoplay: true,
+                    controls: false,
+                    slideBy: 1
+                }
             }
         });
+
     </script>
 </body>
 
