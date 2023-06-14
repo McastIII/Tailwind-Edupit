@@ -8,6 +8,34 @@
     <title>Edupit - Home</title>
     <link rel="stylesheet" href="./output.css">
     <script src="https://kit.fontawesome.com/84f56e6e16.js" crossorigin="anonymous"></script>
+    <link
+      rel="preload"
+      href="./fonts/Raleway-Italic-VariableFont_wght.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Raleway-Italic-VariableFont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Raleway-VariableFont_wght.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Raleway-VariableFont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,7 +45,7 @@
 <body>
     <!-- MOBILE HEADER -->
     <header class="header">
-        <div class="branding">
+        <!-- <div class="branding">
             <img src="./img/logo2.png" alt="">
         </div>
         <div class="header__wrapper">
@@ -220,9 +248,12 @@
                     <li><a href="javascript:void(0)">Contact Style 05</a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
+
 <!-- DESKTOP HEADER -->
-<div class="header__details">
+<!-- <div class="header__details">
+
+
     <div class="header__wrapper__desktop">
         <div class="header__text">
             <p>2020-2021 Admission going on . .</p>
@@ -358,6 +389,128 @@
                 <a href="">Get a Quote</a>
             </div>
         </div>
+    </div>
+</div> -->
+
+<div class="header__wrapper">
+    <div class="branding">
+        <picture>
+            <source media="(max-width:500px)" srcset="./img/logo2.png">
+            <source media="(min-width:1080px)" srcset="./img/logoWhite.png">
+            <img src="./img/logo2.png" alt="Flowers" style="width:auto;">
+          </picture>
+    </div>
+    <div class="header__nav">
+        <div class="header__nav__title">
+            <h2>MENU</h2>
+            <div class="toggle__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <li class="drop__nav group">
+                <h4><p>HOME</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1]  lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">Home One</a></li>
+                        <li><a href="">Home Two</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop__nav group">
+                <h4><p>ABOUT</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">About Style 02</a></li>
+                        <li><a href="">About Style 03</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop__nav group">
+                <h4><p>COURSES</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">Instructor Registration</a></li>
+                        <li><a href="">Student Registration</a></li>
+                        <li><a href="">Dashboard</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop__nav group">
+                <h4><p>ACADEMICS</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">Admission</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Elements</a></li>
+                        <li><a href="">Service Style</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Pricing Plan</a></li>
+                        <li><a href="">Why Choose Us</a></li>
+                        <li><a href="">Countdown</a></li>
+                        <li><a href="">Counter</a></li>
+                        <li><a href="">Case Study</a></li>
+                        <li><a href="">FAQs</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop__nav group">
+                <h4><p>BLOG</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">Blog Left Sidebar</a></li>
+                        <li><a href="">Blog Right Sidebar</a></li>
+                        <li><a href="">Blog Left 2 Column</a></li>
+                        <li><a href="">BlogRight 2 Column</a></li>
+                        <li><a href="">Blog Both Sidebar</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop__nav group">
+                <h4><p>CONTACT</p>
+                <div class="drop__toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                </h4>
+                <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <ul>
+                        <li><a href="">Contact Style 02</a></li>
+                        <li><a href="">Contact Style 03</a></li>
+                        <li><a href="">Contact Style 04</a></li>
+                        <li><a href="">Contact Style 05</a></li>
+                    </ul>
+                </div>
+            </li>
+            <a href="" class="free btn--solid">Free Trial</a>
+        </nav>
     </div>
 </div>
     </header>
@@ -811,6 +964,176 @@
         </div>
     </section>
 
+    <section class="news">
+        <div class="container">
+            <div class="news__wrapper">
+                <div class="news__title">
+                    <h6>NEWS</h6>
+                    <h3>All the benefits you get in our latest news & blog</h3>
+                </div>
+                <div class="news__list">
+                    <div class="news__item">
+                        <img src="" alt="">
+                        <div class="news__text">
+                            <h5>How will you know success when it shows</h5>
+                            <ul>
+                                <li><i class="fa-solid fa-tag" style="color: #0eb582;"></i>Architecture</li>
+                                <li><i class="fa-solid fa-clock" style="color: #0eb582;"></i>05 May 2021</li>
+                            </ul>
+                        </div>
+                        <div class="news__btn">
+                            <a href="">VIEW More</a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="" alt="">
+                        <div class="news__text">
+                            <h5>Where people develop their own potential</h5>
+                            <ul>
+                                <li><i class="fa-solid fa-tag" style="color: #0eb582;"></i>Philosophy</li>
+                                <li><i class="fa-solid fa-clock" style="color: #0eb582;"></i>05 May 2021</li>
+                            </ul>
+                        </div>
+                        <div class="news__btn">
+                            <a href="">VIEW More</a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="" alt="">
+                        <div class="news__text">
+                            <h5>We believe everyone has capacity is a place</h5>
+                            <ul>
+                                <li><i class="fa-solid fa-tag" style="color: #0eb582;"></i>Physics</li>
+                                <li><i class="fa-solid fa-clock" style="color: #0eb582;"></i>05 May 2021</li>
+                            </ul>
+                        </div>
+                        <div class="news__btn">
+                            <a href="">VIEW More</a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="" alt="">
+                        <div class="news__text">
+                            <h5>Transforming our in science facilities </h5>
+                            <ul>
+                                <li><i class="fa-solid fa-tag" style="color: #0eb582;"></i></li>
+                                <li><i class="fa-solid fa-clock" style="color: #0eb582;"></i></li>
+                            </ul>
+                        </div>
+                        <div class="news__btn">
+                            <a href="">VIEW More</a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="" alt="">
+                        <div class="news__text">
+                            <h5>We believe everyone has capacity is place</h5>
+                            <ul>
+                                <li><i class="fa-solid fa-tag" style="color: #0eb582;"></i>Chemistry</li>
+                                <li><i class="fa-solid fa-clock" style="color: #0eb582;"></i>05 May 2021</li>
+                            </ul>
+                        </div>
+                        <div class="news__btn">
+                            <a href="">VIEW More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="testimonial">
+        <div class="container">
+            <div class="testimonial__wrapper">
+                <div class="testimonial__content">
+                    <img src="./img/testimonial.png" alt="">
+                    <div class="testimonial__text">
+                        <h6>Testimonial</h6>
+                        <h3>What our students have to say from real students</h3>
+                    </div>
+                </div>
+                <div class="testimonial__list">
+                    <div class="testimonial__item">
+                      <div class="testimonial__ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                        </ul>
+                        <p></p>
+                        <div class="testimonial__details">
+                            <img src="./img/team-01.jpg" alt="">
+                            <div class="testimonial__name">
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial__item">
+                      <div class="testimonial__ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                        </ul>
+                        <p></p>
+                        <div class="testimonial__details">
+                            <img src="./img/team-02.jpg" alt="">
+                            <div class="testimonial__name">
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial__item">
+                      <div class="testimonial__ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                        </ul>
+                        <p></p>
+                        <div class="testimonial__details">
+                            <img src="./img/team-01.jpg" alt="">
+                            <div class="testimonial__name">
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial__item">
+                      <div class="testimonial__ratings">
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                        </ul>
+                        <p></p>
+                        <div class="testimonial__details">
+                            <img src="./img/team-02.jpg" alt="">
+                            <div class="testimonial__name">
+                                <h5></h5>
+                                <h6></h6>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
@@ -818,7 +1141,7 @@
             container: '.banner__list',
             items: 1,
             slideBy: 'page',
-            autoplay: false,
+            autoplay: true,
             axis: 'horizontal',
             controls: false,
             nav: false,
@@ -841,6 +1164,7 @@
                 1024: {
                     items: 4,
                     nav: true,
+                    navPosition: 'bottom',
                     autoplay: true,
                     controls: false,
                     slideBy: 1
