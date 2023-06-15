@@ -551,3 +551,59 @@ body{
         @apply text-center text-gray-400
     }
 }
+
+@layer components{
+    .footer__middle {
+        @apply bg-dark
+    }
+    .description__area img{
+        @apply mx-auto pt-[12rem] pb-[2rem]
+        lg:pt-[1.8rem]
+    }
+    .description__area p{
+        @apply pb-[1rem] text-[1.2rem] 
+    }
+    .middle__row{
+        @apply text-center text-white
+        lg:grid lg:grid-cols-4
+    }
+    .social-icons i{
+        @apply border-[1px] border-white p-[.5rem] rounded hover:bg-primary transition-all
+    }
+    .nav_menu1 h2{
+        @apply text-[1.5rem] font-bold pt-[2rem] pb-[1.5rem]
+    }
+    .menu__container ul li a{
+        @apply text-[1.2rem]
+    }
+    .menu__container ul li {
+        @apply pb-[1rem] hover:text-primary transition-all
+    }
+    .custom__html h2{
+        @apply text-[1.5rem] pt-[1.5rem] pb-[1rem]
+        lg:pt-[2rem]
+    }
+    .witr_sub_table{
+        @apply flex justify-between text-[1.2rem] pb-[8px] border-b-[1px] mb-[8px]
+    }
+}
+
+@layer components{
+    .footer-bottom{
+        @apply relative bg-dark text-white pt-[3rem]
+    }
+    .copy-right-text{
+        @apply flex justify-center pb-[1rem] pt-[1rem] text-[1rem]
+    }
+    .text-right{
+        @apply flex justify-center  gap-[1rem] 
+        
+    }
+    .text-right li{
+        @apply  hover:text-primary transition-all text-[1rem]
+    }
+    .row{
+        @apply border-t-[1px]
+    lg:flex lg:justify-between lg:items-center
+    }
+}
