@@ -1149,10 +1149,12 @@ video {
 .toggle__menu span {
   display: block;
   height: .2rem;
-  width: 2rem;
-  border-radius: 9999px;
+  width: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .toggle__menu span:nth-child(2) {
@@ -1161,9 +1163,12 @@ video {
 }
 
 .toggle__menu.open span:first-child {
-  --tw-translate-y: 0.5rem;
-  --tw-rotate: 45deg;
+  --tw-translate-y: 6px;
+  --tw-rotate: 225deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .toggle__menu.open span:nth-child(2) {
@@ -1174,9 +1179,12 @@ video {
 }
 
 .toggle__menu.open span:last-child {
-  --tw-translate-y: -0.5rem;
-  --tw-rotate: -45deg;
+  --tw-translate-y: -9px;
+  --tw-rotate: -225deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .banner {
@@ -1770,6 +1778,14 @@ video {
   transition-duration: 500ms;
 }
 
+.today__cards__item:hover .img__text i, .today__cards__item:hover .img__text p {
+  --tw-translate-y: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
 .today__item__text {
   margin-top: 1.5rem;
   display: flex;
@@ -1871,6 +1887,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: .5rem;
   font-size: 1.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 .img__text p {
@@ -1887,6 +1906,9 @@ video {
   font-size: 1.2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 @media (min-width: 1024px) {
@@ -2510,6 +2532,8 @@ video {
 
 .apply {
   background-color: #0EB58208;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media (min-width: 1024px) {

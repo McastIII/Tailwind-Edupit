@@ -196,22 +196,22 @@ body{
         @apply px-[4rem] lg:px-[1rem] w-[20rem] transition-all;
     }
     .toggle__menu{
-        @apply absolute right-5 top-[35%] lg:hidden;
+        @apply absolute right-5 top-[35%] lg:hidden;    
     }
     .toggle__menu span{
-        @apply block bg-white h-[.2rem] w-[2rem] rounded-full;
+        @apply w-[1.5rem] h-[.2rem] bg-light block transition-all;
     }
     .toggle__menu span:nth-child(2){
         @apply my-1;
     }
     .toggle__menu.open span:first-child{
-        @apply rotate-[45deg] translate-y-2;
+        @apply transform translate-y-[6px] rotate-[225deg] transition-all;
     }
     .toggle__menu.open span:nth-child(2){
         @apply opacity-0 transition-all;
     }
     .toggle__menu.open span:last-child{
-        @apply rotate-[-45deg] -translate-y-2;
+        @apply transform translate-y-[-9px] rotate-[-225deg] transition-all;
     }
 }
 
@@ -385,6 +385,9 @@ body{
     .today__cards__item:hover{
         @apply -translate-y-4 transition-all duration-500;
     }
+    .today__cards__item:hover .img__text i, .today__cards__item:hover .img__text p{
+        @apply translate-y-4 transition-all duration-500;
+    }
     .today__item__text{
         @apply flex flex-col gap-[.5rem] mt-[1.5rem];
     }
@@ -425,10 +428,10 @@ body{
         @apply cursor-pointer;
     }
     .img__text i{
-        @apply absolute bg-white p-[.5rem] top-3 right-5 text-[1.5rem] rounded-sm;
+        @apply absolute bg-white p-[.5rem] top-3 right-5 text-[1.5rem] rounded-sm transition-all duration-500;
     }
     .img__text p{
-        @apply absolute text-[1.2rem] text-white px-[.5rem] py-[.2rem] top-3 left-3 bg-primary rounded-md;
+        @apply absolute text-[1.2rem] text-white px-[.5rem] py-[.2rem] top-3 left-3 bg-primary rounded-md transition-all duration-500;
     }
 }
 
@@ -637,7 +640,7 @@ body{
 /* APPLY */
 @layer components{
 .apply{
-    @apply bg-[#0EB58208] lg:pb-[5rem];
+    @apply bg-[#0EB58208] lg:pb-[5rem] px-[2rem];
 }
 .apply__wrapper{
     @apply lg:flex lg:max-w-[70rem] lg:mx-auto lg:gap-[2rem];
