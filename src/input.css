@@ -19,7 +19,7 @@ body{
 
 
 .banner .tns-controls{
-    @apply text-[2rem]  lg:text-light lg:flex lg:justify-between lg:z-[999] lg:w-[95%] lg:left-[2%] lg:top-[50%] lg:absolute;
+    @apply text-[2rem]  lg:text-light lg:hidden lg:justify-between lg:z-[999] lg:w-[95%] lg:left-[2%] lg:top-[50%] lg:absolute;
 }
 .banner .tns-outer i{
     @apply bg-primary rounded-full lg:h-[4rem] lg:w-[4rem] lg:py-[1rem] hover:bg-black duration-500 transition-all
@@ -30,8 +30,11 @@ body{
 .features .tns-outer{
     @apply lg:max-w-[68%] lg:w-full lg:mx-auto lg:flex lg:items-center lg:h-fit lg:-translate-y-[7rem];
 }
+.features .tns-outer:hover .tns-controls{
+    @apply lg:flex;
+}
 .features .tns-controls{
-    @apply text-[2rem]  lg:text-light lg:flex lg:justify-between lg:z-[999] lg:w-[105%] lg:left-[-2rem] lg:absolute;
+    @apply text-[2rem]  lg:text-light lg:hidden lg:justify-between lg:z-[999] lg:w-[105%] lg:left-[-2rem] lg:absolute;
 }
 .features .tns-outer i{
     @apply bg-primary rounded-full lg:h-[4rem] lg:w-[4rem] lg:py-[1rem] hover:bg-black duration-500 transition-all
@@ -106,7 +109,7 @@ body{
         @apply hidden lg:block lg:py-2;
     }
     .header__quote{
-        @apply hidden lg:inline-block w-[11rem] text-[1.2rem] text-light mx-auto ;
+        @apply hidden lg:inline-block w-[11rem] text-light mx-auto ;
     }
     .header__quote a{
         @apply bg-primary border-[1px] font-bold border-primary p-[1rem] rounded-md ;
@@ -212,7 +215,10 @@ body{
 /* BANNER */
 @layer components{
     .banner{
-        @apply bg-slider1 bg-cover bg-no-repeat max-h-[75vh] lg:max-h-[100vh] lg:pt-[3rem] pb-[5rem] lg:pb-[8rem];
+        @apply bg-slider1 bg-cover bg-no-repeat max-h-[75vh] lg:max-h-[100vh] lg:pt-[3rem] pb-[5rem] lg:pb-[12rem];
+    }
+    .banner:hover .tns-controls{
+        @apply lg:flex;
     }
     .banner__wrapper{
         @apply pt-[11rem] lg:max-w-[90rem] lg:mx-auto;
@@ -293,6 +299,17 @@ body{
 
 /* ABOUT */
 @layer components{
+    #roll-up{
+		@apply fixed bg-primary outline-none border-none py-[.7rem] px-[.8rem] right-[1rem] bottom-[1rem] z-[5] transition-[.5s] ease-in lg:px-[1rem] lg:bottom-[3rem] lg:z-[5] lg:transition-[.5s];
+	}
+
+	#roll-up:hover{
+		@apply bg-dark transition-[.5s] ease-in;
+	}
+
+	#roll-up i{
+		@apply text-light;
+	} 
     .about__wrapper{
         @apply flex flex-col lg:max-w-[70rem] lg:mx-auto lg:grid lg:grid-cols-2 lg:gap-[2rem] lg:items-center;
     }
@@ -303,7 +320,7 @@ body{
         @apply flex flex-col gap-[2rem];
     }
     .about__right__item h6{
-        @apply text-[1.5rem] font-bold text-primary mt-[2rem];
+        @apply text-[1.5rem] font-bold text-primary mt-[2rem] lg:text-[1rem];
     }
     .about__right__item h3{
         @apply text-[1.62rem] font-bold text-dark mb-[2rem];
@@ -345,7 +362,7 @@ body{
 /* TODAY */
 @layer components{
     .today__wrapper{
-        @apply lg:max-w-[70rem] lg:mx-auto;
+        @apply lg:max-w-[70rem] lg:mx-auto lg:mb-[5rem];
     }
     .today__wrapper h6{
         @apply text-[1.5rem] font-bold text-primary text-center lg:text-[1rem];
@@ -497,7 +514,7 @@ body{
 /* NEWS */
 @layer components{
     .news{
-        @apply relative;
+        @apply relative lg:mb-[5rem];
     }
     .news__wrapper{
         @apply lg:max-w-[70rem] lg:mx-auto;
@@ -549,7 +566,7 @@ body{
         @apply absolute top-[2%] left-[10%] bg-primary text-light rounded-[.2rem] font-[600] m-[1rem] text-[0] transition-all duration-500
     }
     .news__item:hover img{
-        @apply bg-dark scale-[1.08] transition-all duration-500;
+        @apply bg-dark scale-[1.08] transition-all duration-500;        
     }
     .news__text h5{
         @apply text-[1.3rem] px-[1rem] font-bold text-dark mt-[2rem];
