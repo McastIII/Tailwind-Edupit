@@ -41,7 +41,7 @@ body{
 }
 
 .instructor .tns-controls{
-    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:top-[15%] lg:right-[20%];
+    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:top-[15%] lg:right-0;
 }
 .instructor .tns-controls i{
     @apply bg-primary rounded-full lg:h-[3rem] lg:w-[3rem] lg:py-[.5rem] hover:bg-black
@@ -50,13 +50,16 @@ body{
     @apply lg:max-w-[70rem] lg:w-full lg:mx-auto lg:flex lg:items-center lg:h-fit;
 }
 .news .tns-controls{
-    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:top-[15%] lg:right-[20%];
+    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:top-[15%] lg:right-0;
 }
 .news .tns-controls i{
     @apply bg-primary rounded-full lg:h-[3rem] lg:w-[3rem] lg:py-[.5rem] hover:bg-black
 }
+.testimonial .tns-outer{
+    @apply relative lg:mb-[2rem];
+}
 .testimonial .tns-controls{
-    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:bottom-[-2rem] lg:right-[43%];
+    @apply text-[2rem]  lg:text-light lg:flex lg:items-end lg:gap-[2rem] lg:mb-[2rem] lg:absolute lg:bottom-[-5rem] lg:left-0;
 }
 .testimonial .tns-controls i{
     @apply bg-primary rounded-full lg:h-[3rem] lg:w-[3rem] lg:py-[.5rem] hover:bg-black
@@ -361,6 +364,9 @@ body{
 }
 /* TODAY */
 @layer components{
+    .today{
+        @apply bg-todaybg bg-cover bg-no-repeat;
+    }
     .today__wrapper{
         @apply lg:max-w-[70rem] lg:mx-auto lg:mb-[5rem];
     }
@@ -432,7 +438,7 @@ body{
         @apply lg:relative;
     }
     .instructor__wrapper{
-        @apply lg:max-w-[70rem] lg:mx-auto;
+        @apply lg:max-w-[70rem] lg:mx-auto lg:relative;
     }
     .instructor__title h6{
         @apply text-[1.5rem] font-bold text-primary lg:text-left lg:text-[1rem];
@@ -517,7 +523,7 @@ body{
         @apply relative lg:mb-[5rem];
     }
     .news__wrapper{
-        @apply lg:max-w-[70rem] lg:mx-auto;
+        @apply lg:max-w-[70rem] lg:relative lg:mx-auto;
     }
     .news__title h6{
         @apply text-[1.5rem] font-bold text-primary lg:text-left lg:text-[1rem];

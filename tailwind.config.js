@@ -16,6 +16,7 @@ module.exports = {
 
     backgroundImage: {
       'slider1': 'url("./img/slider-bg2.jpg")',
+      'todaybg': 'url("./img/shape.png")',
     },
 
     keyframes: {

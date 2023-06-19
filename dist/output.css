@@ -1691,6 +1691,12 @@ video {
   max-width: 6rem;
 }
 
+.today {
+  background-image: url("./img/shape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 1024px) {
   .today__wrapper {
     margin-left: auto;
@@ -1889,6 +1895,7 @@ video {
   }
 
   .instructor__wrapper {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
@@ -2147,6 +2154,7 @@ video {
   }
 
   .news__wrapper {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
@@ -3174,7 +3182,7 @@ body{
   .instructor .tns-controls {
     position: absolute;
     top: 15%;
-    right: 20%;
+    right: 0px;
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-end;
@@ -3223,7 +3231,7 @@ body{
   .news .tns-controls {
     position: absolute;
     top: 15%;
-    right: 20%;
+    right: 0px;
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-end;
@@ -3253,6 +3261,16 @@ body{
   }
 }
 
+.testimonial .tns-outer {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .testimonial .tns-outer {
+    margin-bottom: 2rem;
+  }
+}
+
 .testimonial .tns-controls {
   font-size: 2rem;
 }
@@ -3260,8 +3278,8 @@ body{
 @media (min-width: 1024px) {
   .testimonial .tns-controls {
     position: absolute;
-    bottom: -2rem;
-    right: 43%;
+    bottom: -5rem;
+    left: 0px;
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-end;
